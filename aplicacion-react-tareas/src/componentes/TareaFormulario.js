@@ -10,7 +10,7 @@ function TareaFormulario(props){
         console.log('Escribiendo...');
         setInput(e.target.value);
         console.log(e.target.value);
-    }
+    };
 
     const manejarEnvio = e => {
         e.preventDefault();
@@ -22,7 +22,7 @@ function TareaFormulario(props){
         }
         console.log(tareaNueva);
         props.onSubmit(tareaNueva);
-    }
+    };
 
     return (
        <form className='tarea-formulario' onSubmit={manejarEnvio}>
